@@ -1,6 +1,6 @@
 # 会計システム並行入力テスト用 仕訳データ
 
-弥生会計と自社開発会計システムに**同じ仕訳**を入力し、集計結果が一致するかを確認するためのテストデータ。
+弥生会計と自社開発会計システム「ちょうざいむ」に**同じ仕訳**を入力し、集計結果が一致するかを確認するためのテストデータ。
 
 ## ファイル
 
@@ -8,7 +8,7 @@
 |---|---|
 | `generate.py` | 仕訳定義と出力処理。データを変えるときはここを編集して `python3 generate.py` を実行 |
 | `output/yayoi_import.csv` | 弥生会計の仕訳日記帳インポート用（Shift_JIS・ヘッダーなし・25項目） |
-| `output/journal_canonical.csv` | 自社システム投入用。1明細1行（借方・貸方を別行）、UTF-8 BOM付き |
+| `output/journal_canonical.csv` | ちょうざいむ投入用。1明細1行（借方・貸方を別行）、UTF-8 BOM付き |
 | `output/expected_trial_balance.csv` | 期待値: 勘定科目別の借方合計・貸方合計・残高、当期純損益 |
 | `output/expected_sub_accounts.csv` | 期待値: 補助科目別残高 |
 | `output/expected_tax_summary.csv` | 期待値: 税区分別の件数・税込金額・消費税額 |

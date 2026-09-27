@@ -1,7 +1,7 @@
-"""弥生会計と自社開発会計システムの並行入力テスト用仕訳データ生成スクリプト。
+"""弥生会計と自社開発会計システム（ちょうざいむ）の並行入力テスト用仕訳データ生成スクリプト。
 
 同じ仕訳定義 (VOUCHERS) から以下を出力する。
-  output/journal_canonical.csv        自社システム投入用（1明細1行、UTF-8 BOM付き）
+  output/journal_canonical.csv        ちょうざいむ投入用（1明細1行、UTF-8 BOM付き）
   output/yayoi_import.csv             弥生会計インポート用（仕訳日記帳形式、Shift_JIS、ヘッダーなし）
   output/expected_trial_balance.csv   期待値: 勘定科目別の試算表
   output/expected_sub_accounts.csv    期待値: 補助科目別残高
